@@ -1,4 +1,5 @@
 *
+!checkStatus
 !*.yaml
 !scenes
 !.gitignore

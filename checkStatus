@@ -1,0 +1,4 @@
+#!/bin/bash
+# Check Config Status
+sudo /srv/homeassistant/bin/hass --script check_config -c /home/homeassistant/.homeassistant
+
