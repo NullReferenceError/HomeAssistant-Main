@@ -1,0 +1,58 @@
+group:
+exterior:
+  name: Exterior
+  entities:
+  - alarm_control_panel.abode
+  - cover.garage_door_opener
+  - binary_sensor.door_contact_front_door
+  - binary_sensor.door_contact_back_door
+  - binary_sensor.door_contact_garage_door
+  - binary_sensor.motion_camera_motion_camera
+  view: false
+
+bedroom:
+  name: Bedroom
+  entities:
+  - binary_sensor.bedroom_occupancy
+  - sensor.bedroom_temperature
+  view: false
+
+kitchen:
+  name: Kitchen
+  entities:
+  - binary_sensor.kitchen_occupancy
+  - sensor.kitchen_temperature
+  view: false
+
+livingroom:
+  name: Living Room
+  entities:
+  - binary_sensor.living_room_occupancy
+  - sensor.living_room_temperature
+  view: false
+
+homestats:
+  name: Home Info
+  entities:
+  - sun.sun
+  - climate.my_ecobee
+  - sensor.my_ecobee_humidity
+  - sensor.my_ecobee_temperature
+  - binary_sensor.my_ecobee_occupancy
+  view: false
+
+otherstats:
+  name: Other Statistics
+  entities:
+  - sensor.pihole_ads_blocked_today
+  - sensor.pihole_ads_percentage_blocked_today
+  - sensor.pihole_dns_queries_today
+  - sensor.pihole_dns_queries_cached
+  - sensor.pihole_dns_queries_forwarded
+  - sensor.pihole_dns_unique_clients
+  - sensor.pihole_dns_unique_domains
+  - sensor.pihole_domains_blocked
+  - sensor.pihole_percentage_today
+  - sensor.pihole_queries_today
+  view: false
+

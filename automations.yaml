@@ -1,0 +1,24 @@
+- action:
+  - alias: Close garage door
+    data:
+      entity_id: cover.garage_door_opener
+    service: cover.close_cover
+  - alias: Notify
+    data:
+      message: Garage door is open!!
+    service: notify.notify
+  alias: Close Garage Door
+  condition:
+  - condition: state
+    entity_id: cover.garage_door_opener
+    state: open
+  id: '1509504183051'
+  trigger:
+  - entity_id: alarm_control_panel.abode_alarm
+    from: disarmed
+    platform: state
+    to: armed_away
+  - entity_id: alarm_control_panel.abode_alarm
+    from: disarmed
+    platform: state
+    to: armed_home
